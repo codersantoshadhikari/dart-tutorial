@@ -1,0 +1,13 @@
+{{/* A numbered list of chapters. Argument: "dart" or "flutter". Lessons are listed on each chapter page. */}}
+<ol class="chapters">
+  {{ range $i, $s := partial "chapters.html" . }}
+  <li>
+    <span class="ch-num">{{ add $i 1 }}</span>
+    <div class="ch-body">
+      <h3><a href="{{ $s.RelPermalink }}">{{ $s.Title }}</a></h3>
+      <p>{{ $s.Description }}</p>
+      <p class="ch-meta">{{ len $s.RegularPages }} lessons{{ with $s.Params.level }} · {{ . }}{{ end }}</p>
+    </div>
+  </li>
+  {{ end }}
+</ol>

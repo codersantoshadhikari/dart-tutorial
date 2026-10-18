@@ -1,0 +1,25 @@
+{{/* One AdSense unit. Call: partial "ad.html" "display" | "in-article" | "multiplex".
+     The adsbygoogle.js loader is in head.html, once per page. */}}
+{{- $client := site.Params.adsense.client -}}
+{{- $slot := cond (eq . "in-article") site.Params.adsense.inArticle (cond (eq . "multiplex") site.Params.adsense.multiplex site.Params.adsense.display) -}}
+{{- if not $slot -}}
+{{- /* No slot configured: Auto ads place ads instead. */ -}}
+{{- else if eq . "in-article" -}}
+<aside class="ad ad-in-article" aria-label="Advertisement">
+  <span class="ad-label">Advertisement</span>
+  <ins class="adsbygoogle" style="display:block;text-align:center" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="{{ $client }}" data-ad-slot="{{ site.Params.adsense.inArticle }}"></ins>
+  <script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+</aside>
+{{- else if eq . "multiplex" -}}
+<aside class="ad ad-multiplex" aria-label="Advertisement">
+  <span class="ad-label">Advertisement</span>
+  <ins class="adsbygoogle" style="display:block" data-ad-format="autorelaxed" data-ad-client="{{ $client }}" data-ad-slot="{{ site.Params.adsense.multiplex }}"></ins>
+  <script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+</aside>
+{{- else -}}
+<aside class="ad ad-display" aria-label="Advertisement">
+  <span class="ad-label">Advertisement</span>
+  <ins class="adsbygoogle" style="display:block" data-ad-client="{{ $client }}" data-ad-slot="{{ site.Params.adsense.display }}" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+</aside>
+{{- end -}}

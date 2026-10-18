@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="{{ site.Language.Locale }}">
+<head>
+{{ partial "head.html" . }}
+</head>
+<body class="{{ block "bodyclass" . }}page{{ end }} track-{{ partial "track.html" . }}" data-playground="{{ "playground/" | relURL }}">
+<a class="skip" href="#main">Skip to content</a>
+{{ partial "header.html" . }}
+{{ block "main" . }}{{ end }}
+{{ partial "footer.html" . }}
+{{ $js := resources.Get "js/main.js" | minify | fingerprint }}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+</body>
+</html>

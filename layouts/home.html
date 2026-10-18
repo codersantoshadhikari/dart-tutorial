@@ -1,0 +1,146 @@
+{{ define "bodyclass" }}home{{ end }}
+{{ define "main" }}
+{{ if ne site.Language.Name "en" }}{{ partial "intl-home.html" . }}{{ else }}
+{{ $dart := partial "lessons.html" "dart" }}
+{{ $dartCh := partial "chapters.html" "dart" }}
+{{ $first := index $dart 0 }}
+<main id="main">
+  <section class="hero">
+    <div class="hero-text">
+      <ul class="hero-badges"><li>100% free</li><li>Beginner to advanced</li><li>12 languages</li><li>Run code in your browser</li></ul>
+      <h1>Dart Tutorial: Learn Dart and Flutter from Beginner to Advanced</h1>
+      <p class="lede">Learn Dart programming the easy way, then build real apps with Flutter. {{ len $dart }} short Dart lessons and a complete Flutter course, with simple examples you can run and edit in the browser and an exercise after every lesson.</p>
+      <div class="hero-cta">
+        <a class="btn primary" href="{{ $first.RelPermalink }}" data-resume data-resume-label="Continue where you left off">Start with Dart</a>
+        <a class="btn" href="https://flutter.dart-tutorial.dev/">Go to Flutter</a>
+        {{ with site.GetPage "/playground" }}<a class="btn" href="{{ .RelPermalink }}">Open the playground</a>{{ end }}
+      </div>
+      <p class="hero-note">Covers Dart 3 and current Flutter with Material 3. Free, no sign-up, works on any device.</p>
+    </div>
+    <div class="hero-code" data-tabs>
+      <div class="win-bar">
+        <i></i><i></i><i></i>
+        <div class="win-tabs" role="tablist" aria-label="Example">
+          <button type="button" role="tab" aria-selected="true" aria-controls="demo-dart" id="tab-dart" data-tab="demo-dart">greet.dart</button>
+          <button type="button" role="tab" aria-selected="false" aria-controls="demo-flutter" id="tab-flutter" data-tab="demo-flutter" tabindex="-1">main.dart (Flutter)</button>
+        </div>
+      </div>
+      <div id="demo-dart" role="tabpanel" aria-labelledby="tab-dart">
+{{ highlight `void main() {
+  final learners = ['Asha', 'Bikram', 'Chen'];
+
+  for (final (i, name) in learners.indexed) {
+    print('${i + 1}. Welcome, $name!');
+  }
+
+  final total = learners.length;
+  print('$total people started Dart today.');
+}` "dart" "" }}
+        <div class="win-out"><span>Output</span><pre>1. Welcome, Asha!
+2. Welcome, Bikram!
+3. Welcome, Chen!
+3 people started Dart today.</pre></div>
+      </div>
+      <div id="demo-flutter" role="tabpanel" aria-labelledby="tab-flutter" hidden>
+{{ highlight `import 'package:flutter/material.dart';
+
+void main() => runApp(const MyApp());
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const MaterialApp(
+      home: Scaffold(
+        body: Center(child: Text('Hello, Flutter!')),
+      ),
+    );
+  }
+}` "dart" "" }}
+        <div class="win-out"><span>Result</span><pre>One codebase. Runs on Android, iOS, web,
+Windows, macOS and Linux.</pre></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tracks" id="chapters" aria-label="Courses">
+    <div class="track-card t-dart">
+      <span class="track-tag">Course 1</span>
+      <a class="track-name stretched" href="{{ "/#dart" | relURL }}">Dart course</a>
+      <span class="track-meta">{{ len $dartCh }} chapters, {{ len $dart }} lessons</span>
+      <span class="track-desc">The language: basics, functions, collections, null safety, OOP, async, Dart 3 features and tooling.</span>
+    </div>
+    <div class="track-card t-flutter">
+      <span class="track-tag">Course 2</span>
+      <a class="track-name stretched" href="https://flutter.dart-tutorial.dev/">Flutter course</a>
+      <span class="track-meta">20 chapters, 135 lessons on flutter.dart-tutorial.dev</span>
+      <span class="track-desc">The framework: widgets, layout, state management (Riverpod, Bloc, Provider, GetX), APIs, Flame games, projects and release.</span>
+    </div>
+  </section>
+
+  <section class="popular" aria-labelledby="popular-h">
+    <h2 id="popular-h">Popular Dart and Flutter topics</h2>
+    <ul class="topic-grid">
+      {{ range site.Params.popular }}{{ $label := index . 0 }}{{ with site.GetPage (index . 1) }}<li><a class="t stretched" href="{{ .RelPermalink }}">{{ $label }}</a><span>{{ .Description | truncate 90 }}</span></li>{{ end }}{{ end }}
+    </ul>
+  </section>
+
+  <section class="path t-dart" id="dart">
+    <div class="path-head">
+      <h2>The Dart course</h2>
+      <p>Start at chapter 1 if you are new to programming. If you already know another language, skim the first three chapters and slow down at null safety.</p>
+      <p class="home-progress" data-progress-total hidden><span data-progress-text></span><i><b data-progress-bar></b></i></p>
+    </div>
+    {{ partial "chapter-list.html" "dart" }}
+  </section>
+
+  <section class="path t-flutter" id="flutter">
+    <div class="path-head">
+      <h2>The Flutter course</h2>
+      <p>From installing the SDK to publishing apps and games on Google Play and the App Store, with every state management approach explained. The Flutter course has its own home on <a href="https://flutter.dart-tutorial.dev/">flutter.dart-tutorial.dev</a>. Begin there once the Dart basics feel comfortable.</p>
+      <p><a class="btn primary" href="https://flutter.dart-tutorial.dev/">Open the Flutter course</a> <a class="btn" href="https://flutter.dart-tutorial.dev/flutter-roadmap/">Flutter roadmap</a></p>
+    </div>
+    <ul class="topic-grid">
+      <li><a class="t stretched" href="https://flutter.dart-tutorial.dev/getting-started/">Getting started with Flutter</a></li>
+      <li><a class="t stretched" href="https://flutter.dart-tutorial.dev/widgets/">Widgets</a></li>
+      <li><a class="t stretched" href="https://flutter.dart-tutorial.dev/layout/">Layout</a></li>
+      <li><a class="t stretched" href="https://flutter.dart-tutorial.dev/state-management/">Built-in state management</a></li>
+      <li><a class="t stretched" href="https://flutter.dart-tutorial.dev/state-packages/">State management packages</a></li>
+      <li><a class="t stretched" href="https://flutter.dart-tutorial.dev/networking/">Networking and APIs</a></li>
+      <li><a class="t stretched" href="https://flutter.dart-tutorial.dev/data-storage/">Storing data and Firebase</a></li>
+      <li><a class="t stretched" href="https://flutter.dart-tutorial.dev/animations/">Animations</a></li>
+      <li><a class="t stretched" href="https://flutter.dart-tutorial.dev/flame-games/">Game development with Flame</a></li>
+      <li><a class="t stretched" href="https://flutter.dart-tutorial.dev/game-projects/">Game projects</a></li>
+      <li><a class="t stretched" href="https://flutter.dart-tutorial.dev/projects/">App projects</a></li>
+      <li><a class="t stretched" href="https://flutter.dart-tutorial.dev/release/">Building and releasing</a></li>
+    </ul>
+  </section>
+
+  <div class="home-ad">{{ partial "ad.html" "display" }}</div>
+
+  <section class="prose home-prose">
+    {{ .Content }}
+    {{ with .Params.faq }}
+    <h2 id="faq">Questions people ask before starting</h2>
+    <div class="faq">
+      {{ range . }}
+      <details><summary>{{ .q }}</summary><p>{{ .a }}</p></details>
+      {{ end }}
+    </div>
+    {{ end }}
+  </section>
+
+  <div class="home-ad">{{ partial "ad.html" "multiplex" }}</div>
+
+  <section class="prose home-prose">{{ partial "share.html" . }}</section>
+
+  {{ partial "teacher.html" (dict) }}
+  {{ partial "langstrip.html" (dict "page" .) }}
+
+  <section class="author-strip">
+    <p>Dart Tutorial is an independent learning resource, written and kept up to date by a Flutter and Dart developer. Found a mistake or want a topic covered? {{ with site.GetPage "/contact" }}<a href="{{ .RelPermalink }}">Get in touch</a>{{ end }}.</p>
+  </section>
+</main>
+{{ end }}
+{{ end }}

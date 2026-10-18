@@ -1,0 +1,958 @@
+[
+ {
+  "source": "/flutter/",
+  "destination": "https://flutter.dart-tutorial.dev/"
+ },
+ {
+  "source": "/flutter",
+  "destination": "https://flutter.dart-tutorial.dev/"
+ },
+ {
+  "source": "/flutter/animations/",
+  "destination": "https://flutter.dart-tutorial.dev/animations/"
+ },
+ {
+  "source": "/flutter/animations",
+  "destination": "https://flutter.dart-tutorial.dev/animations/"
+ },
+ {
+  "source": "/flutter/animations/custom-paint/",
+  "destination": "https://flutter.dart-tutorial.dev/animations/custom-paint/"
+ },
+ {
+  "source": "/flutter/animations/custom-paint",
+  "destination": "https://flutter.dart-tutorial.dev/animations/custom-paint/"
+ },
+ {
+  "source": "/flutter/animations/explicit-animations/",
+  "destination": "https://flutter.dart-tutorial.dev/animations/explicit-animations/"
+ },
+ {
+  "source": "/flutter/animations/explicit-animations",
+  "destination": "https://flutter.dart-tutorial.dev/animations/explicit-animations/"
+ },
+ {
+  "source": "/flutter/animations/hero-and-page-transitions/",
+  "destination": "https://flutter.dart-tutorial.dev/animations/hero-and-page-transitions/"
+ },
+ {
+  "source": "/flutter/animations/hero-and-page-transitions",
+  "destination": "https://flutter.dart-tutorial.dev/animations/hero-and-page-transitions/"
+ },
+ {
+  "source": "/flutter/animations/implicit-animations/",
+  "destination": "https://flutter.dart-tutorial.dev/animations/implicit-animations/"
+ },
+ {
+  "source": "/flutter/animations/implicit-animations",
+  "destination": "https://flutter.dart-tutorial.dev/animations/implicit-animations/"
+ },
+ {
+  "source": "/flutter/architecture/",
+  "destination": "https://flutter.dart-tutorial.dev/architecture/"
+ },
+ {
+  "source": "/flutter/architecture",
+  "destination": "https://flutter.dart-tutorial.dev/architecture/"
+ },
+ {
+  "source": "/flutter/architecture/dependency-injection-and-config/",
+  "destination": "https://flutter.dart-tutorial.dev/architecture/dependency-injection-and-config/"
+ },
+ {
+  "source": "/flutter/architecture/dependency-injection-and-config",
+  "destination": "https://flutter.dart-tutorial.dev/architecture/dependency-injection-and-config/"
+ },
+ {
+  "source": "/flutter/architecture/mvvm-and-repository/",
+  "destination": "https://flutter.dart-tutorial.dev/architecture/mvvm-and-repository/"
+ },
+ {
+  "source": "/flutter/architecture/mvvm-and-repository",
+  "destination": "https://flutter.dart-tutorial.dev/architecture/mvvm-and-repository/"
+ },
+ {
+  "source": "/flutter/architecture/project-architecture/",
+  "destination": "https://flutter.dart-tutorial.dev/architecture/project-architecture/"
+ },
+ {
+  "source": "/flutter/architecture/project-architecture",
+  "destination": "https://flutter.dart-tutorial.dev/architecture/project-architecture/"
+ },
+ {
+  "source": "/flutter/data-storage/",
+  "destination": "https://flutter.dart-tutorial.dev/data-storage/"
+ },
+ {
+  "source": "/flutter/data-storage",
+  "destination": "https://flutter.dart-tutorial.dev/data-storage/"
+ },
+ {
+  "source": "/flutter/data-storage/firebase-introduction/",
+  "destination": "https://flutter.dart-tutorial.dev/data-storage/firebase-introduction/"
+ },
+ {
+  "source": "/flutter/data-storage/firebase-introduction",
+  "destination": "https://flutter.dart-tutorial.dev/data-storage/firebase-introduction/"
+ },
+ {
+  "source": "/flutter/data-storage/local-files/",
+  "destination": "https://flutter.dart-tutorial.dev/data-storage/local-files/"
+ },
+ {
+  "source": "/flutter/data-storage/local-files",
+  "destination": "https://flutter.dart-tutorial.dev/data-storage/local-files/"
+ },
+ {
+  "source": "/flutter/data-storage/shared-preferences/",
+  "destination": "https://flutter.dart-tutorial.dev/data-storage/shared-preferences/"
+ },
+ {
+  "source": "/flutter/data-storage/shared-preferences",
+  "destination": "https://flutter.dart-tutorial.dev/data-storage/shared-preferences/"
+ },
+ {
+  "source": "/flutter/data-storage/sqlite/",
+  "destination": "https://flutter.dart-tutorial.dev/data-storage/sqlite/"
+ },
+ {
+  "source": "/flutter/data-storage/sqlite",
+  "destination": "https://flutter.dart-tutorial.dev/data-storage/sqlite/"
+ },
+ {
+  "source": "/flutter/device-features/",
+  "destination": "https://flutter.dart-tutorial.dev/device-features/"
+ },
+ {
+  "source": "/flutter/device-features",
+  "destination": "https://flutter.dart-tutorial.dev/device-features/"
+ },
+ {
+  "source": "/flutter/device-features/camera-and-image-picker/",
+  "destination": "https://flutter.dart-tutorial.dev/device-features/camera-and-image-picker/"
+ },
+ {
+  "source": "/flutter/device-features/camera-and-image-picker",
+  "destination": "https://flutter.dart-tutorial.dev/device-features/camera-and-image-picker/"
+ },
+ {
+  "source": "/flutter/device-features/common-plugins/",
+  "destination": "https://flutter.dart-tutorial.dev/device-features/common-plugins/"
+ },
+ {
+  "source": "/flutter/device-features/common-plugins",
+  "destination": "https://flutter.dart-tutorial.dev/device-features/common-plugins/"
+ },
+ {
+  "source": "/flutter/device-features/platform-channels/",
+  "destination": "https://flutter.dart-tutorial.dev/device-features/platform-channels/"
+ },
+ {
+  "source": "/flutter/device-features/platform-channels",
+  "destination": "https://flutter.dart-tutorial.dev/device-features/platform-channels/"
+ },
+ {
+  "source": "/flutter/device-features/plugins-and-permissions/",
+  "destination": "https://flutter.dart-tutorial.dev/device-features/plugins-and-permissions/"
+ },
+ {
+  "source": "/flutter/device-features/plugins-and-permissions",
+  "destination": "https://flutter.dart-tutorial.dev/device-features/plugins-and-permissions/"
+ },
+ {
+  "source": "/flutter/getting-started/",
+  "destination": "https://flutter.dart-tutorial.dev/getting-started/"
+ },
+ {
+  "source": "/flutter/getting-started",
+  "destination": "https://flutter.dart-tutorial.dev/getting-started/"
+ },
+ {
+  "source": "/flutter/getting-started/first-flutter-app/",
+  "destination": "https://flutter.dart-tutorial.dev/getting-started/first-flutter-app/"
+ },
+ {
+  "source": "/flutter/getting-started/first-flutter-app",
+  "destination": "https://flutter.dart-tutorial.dev/getting-started/first-flutter-app/"
+ },
+ {
+  "source": "/flutter/getting-started/hot-reload/",
+  "destination": "https://flutter.dart-tutorial.dev/getting-started/hot-reload/"
+ },
+ {
+  "source": "/flutter/getting-started/hot-reload",
+  "destination": "https://flutter.dart-tutorial.dev/getting-started/hot-reload/"
+ },
+ {
+  "source": "/flutter/getting-started/install-flutter/",
+  "destination": "https://flutter.dart-tutorial.dev/getting-started/install-flutter/"
+ },
+ {
+  "source": "/flutter/getting-started/install-flutter",
+  "destination": "https://flutter.dart-tutorial.dev/getting-started/install-flutter/"
+ },
+ {
+  "source": "/flutter/getting-started/project-structure/",
+  "destination": "https://flutter.dart-tutorial.dev/getting-started/project-structure/"
+ },
+ {
+  "source": "/flutter/getting-started/project-structure",
+  "destination": "https://flutter.dart-tutorial.dev/getting-started/project-structure/"
+ },
+ {
+  "source": "/flutter/getting-started/what-is-flutter/",
+  "destination": "https://flutter.dart-tutorial.dev/getting-started/what-is-flutter/"
+ },
+ {
+  "source": "/flutter/getting-started/what-is-flutter",
+  "destination": "https://flutter.dart-tutorial.dev/getting-started/what-is-flutter/"
+ },
+ {
+  "source": "/flutter/layout/",
+  "destination": "https://flutter.dart-tutorial.dev/layout/"
+ },
+ {
+  "source": "/flutter/layout",
+  "destination": "https://flutter.dart-tutorial.dev/layout/"
+ },
+ {
+  "source": "/flutter/layout/expanded-and-flexible/",
+  "destination": "https://flutter.dart-tutorial.dev/layout/expanded-and-flexible/"
+ },
+ {
+  "source": "/flutter/layout/expanded-and-flexible",
+  "destination": "https://flutter.dart-tutorial.dev/layout/expanded-and-flexible/"
+ },
+ {
+  "source": "/flutter/layout/gridview/",
+  "destination": "https://flutter.dart-tutorial.dev/layout/gridview/"
+ },
+ {
+  "source": "/flutter/layout/gridview",
+  "destination": "https://flutter.dart-tutorial.dev/layout/gridview/"
+ },
+ {
+  "source": "/flutter/layout/layout-basics/",
+  "destination": "https://flutter.dart-tutorial.dev/layout/layout-basics/"
+ },
+ {
+  "source": "/flutter/layout/layout-basics",
+  "destination": "https://flutter.dart-tutorial.dev/layout/layout-basics/"
+ },
+ {
+  "source": "/flutter/layout/listview/",
+  "destination": "https://flutter.dart-tutorial.dev/layout/listview/"
+ },
+ {
+  "source": "/flutter/layout/listview",
+  "destination": "https://flutter.dart-tutorial.dev/layout/listview/"
+ },
+ {
+  "source": "/flutter/layout/padding-and-alignment/",
+  "destination": "https://flutter.dart-tutorial.dev/layout/padding-and-alignment/"
+ },
+ {
+  "source": "/flutter/layout/padding-and-alignment",
+  "destination": "https://flutter.dart-tutorial.dev/layout/padding-and-alignment/"
+ },
+ {
+  "source": "/flutter/layout/row-and-column/",
+  "destination": "https://flutter.dart-tutorial.dev/layout/row-and-column/"
+ },
+ {
+  "source": "/flutter/layout/row-and-column",
+  "destination": "https://flutter.dart-tutorial.dev/layout/row-and-column/"
+ },
+ {
+  "source": "/flutter/layout/scrolling-and-slivers/",
+  "destination": "https://flutter.dart-tutorial.dev/layout/scrolling-and-slivers/"
+ },
+ {
+  "source": "/flutter/layout/scrolling-and-slivers",
+  "destination": "https://flutter.dart-tutorial.dev/layout/scrolling-and-slivers/"
+ },
+ {
+  "source": "/flutter/layout/stack/",
+  "destination": "https://flutter.dart-tutorial.dev/layout/stack/"
+ },
+ {
+  "source": "/flutter/layout/stack",
+  "destination": "https://flutter.dart-tutorial.dev/layout/stack/"
+ },
+ {
+  "source": "/flutter/material-design/",
+  "destination": "https://flutter.dart-tutorial.dev/material-design/"
+ },
+ {
+  "source": "/flutter/material-design",
+  "destination": "https://flutter.dart-tutorial.dev/material-design/"
+ },
+ {
+  "source": "/flutter/material-design/assets-and-fonts/",
+  "destination": "https://flutter.dart-tutorial.dev/material-design/assets-and-fonts/"
+ },
+ {
+  "source": "/flutter/material-design/assets-and-fonts",
+  "destination": "https://flutter.dart-tutorial.dev/material-design/assets-and-fonts/"
+ },
+ {
+  "source": "/flutter/material-design/bottom-navigation-drawer-tabs/",
+  "destination": "https://flutter.dart-tutorial.dev/material-design/bottom-navigation-drawer-tabs/"
+ },
+ {
+  "source": "/flutter/material-design/bottom-navigation-drawer-tabs",
+  "destination": "https://flutter.dart-tutorial.dev/material-design/bottom-navigation-drawer-tabs/"
+ },
+ {
+  "source": "/flutter/material-design/cards-and-list-tiles/",
+  "destination": "https://flutter.dart-tutorial.dev/material-design/cards-and-list-tiles/"
+ },
+ {
+  "source": "/flutter/material-design/cards-and-list-tiles",
+  "destination": "https://flutter.dart-tutorial.dev/material-design/cards-and-list-tiles/"
+ },
+ {
+  "source": "/flutter/material-design/dialogs-snackbars-bottom-sheets/",
+  "destination": "https://flutter.dart-tutorial.dev/material-design/dialogs-snackbars-bottom-sheets/"
+ },
+ {
+  "source": "/flutter/material-design/dialogs-snackbars-bottom-sheets",
+  "destination": "https://flutter.dart-tutorial.dev/material-design/dialogs-snackbars-bottom-sheets/"
+ },
+ {
+  "source": "/flutter/material-design/scaffold-and-appbar/",
+  "destination": "https://flutter.dart-tutorial.dev/material-design/scaffold-and-appbar/"
+ },
+ {
+  "source": "/flutter/material-design/scaffold-and-appbar",
+  "destination": "https://flutter.dart-tutorial.dev/material-design/scaffold-and-appbar/"
+ },
+ {
+  "source": "/flutter/material-design/themes-and-dark-mode/",
+  "destination": "https://flutter.dart-tutorial.dev/material-design/themes-and-dark-mode/"
+ },
+ {
+  "source": "/flutter/material-design/themes-and-dark-mode",
+  "destination": "https://flutter.dart-tutorial.dev/material-design/themes-and-dark-mode/"
+ },
+ {
+  "source": "/flutter/navigation/",
+  "destination": "https://flutter.dart-tutorial.dev/navigation/"
+ },
+ {
+  "source": "/flutter/navigation",
+  "destination": "https://flutter.dart-tutorial.dev/navigation/"
+ },
+ {
+  "source": "/flutter/navigation/go-router/",
+  "destination": "https://flutter.dart-tutorial.dev/navigation/go-router/"
+ },
+ {
+  "source": "/flutter/navigation/go-router",
+  "destination": "https://flutter.dart-tutorial.dev/navigation/go-router/"
+ },
+ {
+  "source": "/flutter/navigation/navigation-patterns/",
+  "destination": "https://flutter.dart-tutorial.dev/navigation/navigation-patterns/"
+ },
+ {
+  "source": "/flutter/navigation/navigation-patterns",
+  "destination": "https://flutter.dart-tutorial.dev/navigation/navigation-patterns/"
+ },
+ {
+  "source": "/flutter/navigation/navigator-basics/",
+  "destination": "https://flutter.dart-tutorial.dev/navigation/navigator-basics/"
+ },
+ {
+  "source": "/flutter/navigation/navigator-basics",
+  "destination": "https://flutter.dart-tutorial.dev/navigation/navigator-basics/"
+ },
+ {
+  "source": "/flutter/navigation/passing-data/",
+  "destination": "https://flutter.dart-tutorial.dev/navigation/passing-data/"
+ },
+ {
+  "source": "/flutter/navigation/passing-data",
+  "destination": "https://flutter.dart-tutorial.dev/navigation/passing-data/"
+ },
+ {
+  "source": "/flutter/networking/",
+  "destination": "https://flutter.dart-tutorial.dev/networking/"
+ },
+ {
+  "source": "/flutter/networking",
+  "destination": "https://flutter.dart-tutorial.dev/networking/"
+ },
+ {
+  "source": "/flutter/networking/futurebuilder/",
+  "destination": "https://flutter.dart-tutorial.dev/networking/futurebuilder/"
+ },
+ {
+  "source": "/flutter/networking/futurebuilder",
+  "destination": "https://flutter.dart-tutorial.dev/networking/futurebuilder/"
+ },
+ {
+  "source": "/flutter/networking/http-requests/",
+  "destination": "https://flutter.dart-tutorial.dev/networking/http-requests/"
+ },
+ {
+  "source": "/flutter/networking/http-requests",
+  "destination": "https://flutter.dart-tutorial.dev/networking/http-requests/"
+ },
+ {
+  "source": "/flutter/networking/json-and-models/",
+  "destination": "https://flutter.dart-tutorial.dev/networking/json-and-models/"
+ },
+ {
+  "source": "/flutter/networking/json-and-models",
+  "destination": "https://flutter.dart-tutorial.dev/networking/json-and-models/"
+ },
+ {
+  "source": "/flutter/networking/loading-and-error-states/",
+  "destination": "https://flutter.dart-tutorial.dev/networking/loading-and-error-states/"
+ },
+ {
+  "source": "/flutter/networking/loading-and-error-states",
+  "destination": "https://flutter.dart-tutorial.dev/networking/loading-and-error-states/"
+ },
+ {
+  "source": "/flutter/networking/pagination/",
+  "destination": "https://flutter.dart-tutorial.dev/networking/pagination/"
+ },
+ {
+  "source": "/flutter/networking/pagination",
+  "destination": "https://flutter.dart-tutorial.dev/networking/pagination/"
+ },
+ {
+  "source": "/flutter/networking/streambuilder/",
+  "destination": "https://flutter.dart-tutorial.dev/networking/streambuilder/"
+ },
+ {
+  "source": "/flutter/networking/streambuilder",
+  "destination": "https://flutter.dart-tutorial.dev/networking/streambuilder/"
+ },
+ {
+  "source": "/flutter/next-steps/",
+  "destination": "https://flutter.dart-tutorial.dev/next-steps/"
+ },
+ {
+  "source": "/flutter/next-steps",
+  "destination": "https://flutter.dart-tutorial.dev/next-steps/"
+ },
+ {
+  "source": "/flutter/next-steps/flutter-cheat-sheet/",
+  "destination": "https://flutter.dart-tutorial.dev/next-steps/flutter-cheat-sheet/"
+ },
+ {
+  "source": "/flutter/next-steps/flutter-cheat-sheet",
+  "destination": "https://flutter.dart-tutorial.dev/next-steps/flutter-cheat-sheet/"
+ },
+ {
+  "source": "/flutter/next-steps/flutter-examples/",
+  "destination": "https://flutter.dart-tutorial.dev/next-steps/flutter-examples/"
+ },
+ {
+  "source": "/flutter/next-steps/flutter-examples",
+  "destination": "https://flutter.dart-tutorial.dev/next-steps/flutter-examples/"
+ },
+ {
+  "source": "/flutter/next-steps/flutter-interview-questions/",
+  "destination": "https://flutter.dart-tutorial.dev/next-steps/flutter-interview-questions/"
+ },
+ {
+  "source": "/flutter/next-steps/flutter-interview-questions",
+  "destination": "https://flutter.dart-tutorial.dev/next-steps/flutter-interview-questions/"
+ },
+ {
+  "source": "/flutter/next-steps/flutter-projects/",
+  "destination": "https://flutter.dart-tutorial.dev/next-steps/flutter-projects/"
+ },
+ {
+  "source": "/flutter/next-steps/flutter-projects",
+  "destination": "https://flutter.dart-tutorial.dev/next-steps/flutter-projects/"
+ },
+ {
+  "source": "/flutter/release/",
+  "destination": "https://flutter.dart-tutorial.dev/release/"
+ },
+ {
+  "source": "/flutter/release",
+  "destination": "https://flutter.dart-tutorial.dev/release/"
+ },
+ {
+  "source": "/flutter/release/app-icon-splash-and-name/",
+  "destination": "https://flutter.dart-tutorial.dev/release/app-icon-splash-and-name/"
+ },
+ {
+  "source": "/flutter/release/app-icon-splash-and-name",
+  "destination": "https://flutter.dart-tutorial.dev/release/app-icon-splash-and-name/"
+ },
+ {
+  "source": "/flutter/release/build-android/",
+  "destination": "https://flutter.dart-tutorial.dev/release/build-android/"
+ },
+ {
+  "source": "/flutter/release/build-android",
+  "destination": "https://flutter.dart-tutorial.dev/release/build-android/"
+ },
+ {
+  "source": "/flutter/release/build-ios/",
+  "destination": "https://flutter.dart-tutorial.dev/release/build-ios/"
+ },
+ {
+  "source": "/flutter/release/build-ios",
+  "destination": "https://flutter.dart-tutorial.dev/release/build-ios/"
+ },
+ {
+  "source": "/flutter/release/ci-cd-and-versioning/",
+  "destination": "https://flutter.dart-tutorial.dev/release/ci-cd-and-versioning/"
+ },
+ {
+  "source": "/flutter/release/ci-cd-and-versioning",
+  "destination": "https://flutter.dart-tutorial.dev/release/ci-cd-and-versioning/"
+ },
+ {
+  "source": "/flutter/release/web-and-desktop/",
+  "destination": "https://flutter.dart-tutorial.dev/release/web-and-desktop/"
+ },
+ {
+  "source": "/flutter/release/web-and-desktop",
+  "destination": "https://flutter.dart-tutorial.dev/release/web-and-desktop/"
+ },
+ {
+  "source": "/flutter/responsive-design/",
+  "destination": "https://flutter.dart-tutorial.dev/responsive-design/"
+ },
+ {
+  "source": "/flutter/responsive-design",
+  "destination": "https://flutter.dart-tutorial.dev/responsive-design/"
+ },
+ {
+  "source": "/flutter/responsive-design/adaptive-apps/",
+  "destination": "https://flutter.dart-tutorial.dev/responsive-design/adaptive-apps/"
+ },
+ {
+  "source": "/flutter/responsive-design/adaptive-apps",
+  "destination": "https://flutter.dart-tutorial.dev/responsive-design/adaptive-apps/"
+ },
+ {
+  "source": "/flutter/responsive-design/mediaquery-and-layoutbuilder/",
+  "destination": "https://flutter.dart-tutorial.dev/responsive-design/mediaquery-and-layoutbuilder/"
+ },
+ {
+  "source": "/flutter/responsive-design/mediaquery-and-layoutbuilder",
+  "destination": "https://flutter.dart-tutorial.dev/responsive-design/mediaquery-and-layoutbuilder/"
+ },
+ {
+  "source": "/flutter/responsive-design/responsive-layouts/",
+  "destination": "https://flutter.dart-tutorial.dev/responsive-design/responsive-layouts/"
+ },
+ {
+  "source": "/flutter/responsive-design/responsive-layouts",
+  "destination": "https://flutter.dart-tutorial.dev/responsive-design/responsive-layouts/"
+ },
+ {
+  "source": "/flutter/responsive-design/safearea-and-orientation/",
+  "destination": "https://flutter.dart-tutorial.dev/responsive-design/safearea-and-orientation/"
+ },
+ {
+  "source": "/flutter/responsive-design/safearea-and-orientation",
+  "destination": "https://flutter.dart-tutorial.dev/responsive-design/safearea-and-orientation/"
+ },
+ {
+  "source": "/flutter/state-management/",
+  "destination": "https://flutter.dart-tutorial.dev/state-management/"
+ },
+ {
+  "source": "/flutter/state-management",
+  "destination": "https://flutter.dart-tutorial.dev/state-management/"
+ },
+ {
+  "source": "/flutter/state-management/bloc/",
+  "destination": "https://flutter.dart-tutorial.dev/state-packages/bloc/"
+ },
+ {
+  "source": "/flutter/state-management/bloc",
+  "destination": "https://flutter.dart-tutorial.dev/state-packages/bloc/"
+ },
+ {
+  "source": "/flutter/state-management/choosing-state-management/",
+  "destination": "https://flutter.dart-tutorial.dev/state-packages/which-state-management/"
+ },
+ {
+  "source": "/flutter/state-management/choosing-state-management",
+  "destination": "https://flutter.dart-tutorial.dev/state-packages/which-state-management/"
+ },
+ {
+  "source": "/flutter/state-management/inherited-widget/",
+  "destination": "https://flutter.dart-tutorial.dev/state-management/inherited-widget/"
+ },
+ {
+  "source": "/flutter/state-management/inherited-widget",
+  "destination": "https://flutter.dart-tutorial.dev/state-management/inherited-widget/"
+ },
+ {
+  "source": "/flutter/state-management/provider/",
+  "destination": "https://flutter.dart-tutorial.dev/state-packages/provider/"
+ },
+ {
+  "source": "/flutter/state-management/provider",
+  "destination": "https://flutter.dart-tutorial.dev/state-packages/provider/"
+ },
+ {
+  "source": "/flutter/state-management/riverpod/",
+  "destination": "https://flutter.dart-tutorial.dev/state-packages/riverpod/"
+ },
+ {
+  "source": "/flutter/state-management/riverpod",
+  "destination": "https://flutter.dart-tutorial.dev/state-packages/riverpod/"
+ },
+ {
+  "source": "/flutter/state-management/state-basics/",
+  "destination": "https://flutter.dart-tutorial.dev/state-management/state-basics/"
+ },
+ {
+  "source": "/flutter/state-management/state-basics",
+  "destination": "https://flutter.dart-tutorial.dev/state-management/state-basics/"
+ },
+ {
+  "source": "/flutter/state-management/valuenotifier-and-changenotifier/",
+  "destination": "https://flutter.dart-tutorial.dev/state-management/valuenotifier-and-changenotifier/"
+ },
+ {
+  "source": "/flutter/state-management/valuenotifier-and-changenotifier",
+  "destination": "https://flutter.dart-tutorial.dev/state-management/valuenotifier-and-changenotifier/"
+ },
+ {
+  "source": "/flutter/testing-and-quality/",
+  "destination": "https://flutter.dart-tutorial.dev/testing-and-quality/"
+ },
+ {
+  "source": "/flutter/testing-and-quality",
+  "destination": "https://flutter.dart-tutorial.dev/testing-and-quality/"
+ },
+ {
+  "source": "/flutter/testing-and-quality/accessibility/",
+  "destination": "https://flutter.dart-tutorial.dev/testing-and-quality/accessibility/"
+ },
+ {
+  "source": "/flutter/testing-and-quality/accessibility",
+  "destination": "https://flutter.dart-tutorial.dev/testing-and-quality/accessibility/"
+ },
+ {
+  "source": "/flutter/testing-and-quality/debugging-and-devtools/",
+  "destination": "https://flutter.dart-tutorial.dev/testing-and-quality/debugging-and-devtools/"
+ },
+ {
+  "source": "/flutter/testing-and-quality/debugging-and-devtools",
+  "destination": "https://flutter.dart-tutorial.dev/testing-and-quality/debugging-and-devtools/"
+ },
+ {
+  "source": "/flutter/testing-and-quality/integration-testing/",
+  "destination": "https://flutter.dart-tutorial.dev/testing-and-quality/integration-testing/"
+ },
+ {
+  "source": "/flutter/testing-and-quality/integration-testing",
+  "destination": "https://flutter.dart-tutorial.dev/testing-and-quality/integration-testing/"
+ },
+ {
+  "source": "/flutter/testing-and-quality/keys/",
+  "destination": "https://flutter.dart-tutorial.dev/testing-and-quality/keys/"
+ },
+ {
+  "source": "/flutter/testing-and-quality/keys",
+  "destination": "https://flutter.dart-tutorial.dev/testing-and-quality/keys/"
+ },
+ {
+  "source": "/flutter/testing-and-quality/localization/",
+  "destination": "https://flutter.dart-tutorial.dev/testing-and-quality/localization/"
+ },
+ {
+  "source": "/flutter/testing-and-quality/localization",
+  "destination": "https://flutter.dart-tutorial.dev/testing-and-quality/localization/"
+ },
+ {
+  "source": "/flutter/testing-and-quality/performance/",
+  "destination": "https://flutter.dart-tutorial.dev/testing-and-quality/performance/"
+ },
+ {
+  "source": "/flutter/testing-and-quality/performance",
+  "destination": "https://flutter.dart-tutorial.dev/testing-and-quality/performance/"
+ },
+ {
+  "source": "/flutter/testing-and-quality/unit-and-widget-testing/",
+  "destination": "https://flutter.dart-tutorial.dev/testing-and-quality/unit-and-widget-testing/"
+ },
+ {
+  "source": "/flutter/testing-and-quality/unit-and-widget-testing",
+  "destination": "https://flutter.dart-tutorial.dev/testing-and-quality/unit-and-widget-testing/"
+ },
+ {
+  "source": "/flutter/user-input/",
+  "destination": "https://flutter.dart-tutorial.dev/user-input/"
+ },
+ {
+  "source": "/flutter/user-input",
+  "destination": "https://flutter.dart-tutorial.dev/user-input/"
+ },
+ {
+  "source": "/flutter/user-input/forms-and-validation/",
+  "destination": "https://flutter.dart-tutorial.dev/user-input/forms-and-validation/"
+ },
+ {
+  "source": "/flutter/user-input/forms-and-validation",
+  "destination": "https://flutter.dart-tutorial.dev/user-input/forms-and-validation/"
+ },
+ {
+  "source": "/flutter/user-input/gestures/",
+  "destination": "https://flutter.dart-tutorial.dev/user-input/gestures/"
+ },
+ {
+  "source": "/flutter/user-input/gestures",
+  "destination": "https://flutter.dart-tutorial.dev/user-input/gestures/"
+ },
+ {
+  "source": "/flutter/user-input/pickers-and-dropdowns/",
+  "destination": "https://flutter.dart-tutorial.dev/user-input/pickers-and-dropdowns/"
+ },
+ {
+  "source": "/flutter/user-input/pickers-and-dropdowns",
+  "destination": "https://flutter.dart-tutorial.dev/user-input/pickers-and-dropdowns/"
+ },
+ {
+  "source": "/flutter/user-input/selection-controls/",
+  "destination": "https://flutter.dart-tutorial.dev/user-input/selection-controls/"
+ },
+ {
+  "source": "/flutter/user-input/selection-controls",
+  "destination": "https://flutter.dart-tutorial.dev/user-input/selection-controls/"
+ },
+ {
+  "source": "/flutter/user-input/textfield/",
+  "destination": "https://flutter.dart-tutorial.dev/user-input/textfield/"
+ },
+ {
+  "source": "/flutter/user-input/textfield",
+  "destination": "https://flutter.dart-tutorial.dev/user-input/textfield/"
+ },
+ {
+  "source": "/flutter/widgets/",
+  "destination": "https://flutter.dart-tutorial.dev/widgets/"
+ },
+ {
+  "source": "/flutter/widgets",
+  "destination": "https://flutter.dart-tutorial.dev/widgets/"
+ },
+ {
+  "source": "/flutter/widgets/buttons/",
+  "destination": "https://flutter.dart-tutorial.dev/widgets/buttons/"
+ },
+ {
+  "source": "/flutter/widgets/buttons",
+  "destination": "https://flutter.dart-tutorial.dev/widgets/buttons/"
+ },
+ {
+  "source": "/flutter/widgets/container/",
+  "destination": "https://flutter.dart-tutorial.dev/widgets/container/"
+ },
+ {
+  "source": "/flutter/widgets/container",
+  "destination": "https://flutter.dart-tutorial.dev/widgets/container/"
+ },
+ {
+  "source": "/flutter/widgets/images-and-icons/",
+  "destination": "https://flutter.dart-tutorial.dev/widgets/images-and-icons/"
+ },
+ {
+  "source": "/flutter/widgets/images-and-icons",
+  "destination": "https://flutter.dart-tutorial.dev/widgets/images-and-icons/"
+ },
+ {
+  "source": "/flutter/widgets/stateful-widget/",
+  "destination": "https://flutter.dart-tutorial.dev/widgets/stateful-widget/"
+ },
+ {
+  "source": "/flutter/widgets/stateful-widget",
+  "destination": "https://flutter.dart-tutorial.dev/widgets/stateful-widget/"
+ },
+ {
+  "source": "/flutter/widgets/stateless-widget/",
+  "destination": "https://flutter.dart-tutorial.dev/widgets/stateless-widget/"
+ },
+ {
+  "source": "/flutter/widgets/stateless-widget",
+  "destination": "https://flutter.dart-tutorial.dev/widgets/stateless-widget/"
+ },
+ {
+  "source": "/flutter/widgets/text/",
+  "destination": "https://flutter.dart-tutorial.dev/widgets/text/"
+ },
+ {
+  "source": "/flutter/widgets/text",
+  "destination": "https://flutter.dart-tutorial.dev/widgets/text/"
+ },
+ {
+  "source": "/flutter/widgets/widget-lifecycle/",
+  "destination": "https://flutter.dart-tutorial.dev/widgets/widget-lifecycle/"
+ },
+ {
+  "source": "/flutter/widgets/widget-lifecycle",
+  "destination": "https://flutter.dart-tutorial.dev/widgets/widget-lifecycle/"
+ },
+ {
+  "source": "/flutter/widgets/widgets-introduction/",
+  "destination": "https://flutter.dart-tutorial.dev/widgets/widgets-introduction/"
+ },
+ {
+  "source": "/flutter/widgets/widgets-introduction",
+  "destination": "https://flutter.dart-tutorial.dev/widgets/widgets-introduction/"
+ },
+ {
+  "source": "/fr/introduction-to-flutter/",
+  "destination": "https://flutter.dart-tutorial.dev/getting-started/what-is-flutter/"
+ },
+ {
+  "source": "/fr/introduction-to-flutter",
+  "destination": "https://flutter.dart-tutorial.dev/getting-started/what-is-flutter/"
+ },
+ {
+  "source": "/fr/introduction-to-flutter/-hot-reload-vs-hot-restart/",
+  "destination": "https://flutter.dart-tutorial.dev/getting-started/hot-reload/"
+ },
+ {
+  "source": "/fr/introduction-to-flutter/-hot-reload-vs-hot-restart",
+  "destination": "https://flutter.dart-tutorial.dev/getting-started/hot-reload/"
+ },
+ {
+  "source": "/fr/introduction-to-flutter/creating-a-new-flutter-project/",
+  "destination": "https://flutter.dart-tutorial.dev/getting-started/first-flutter-app/"
+ },
+ {
+  "source": "/fr/introduction-to-flutter/creating-a-new-flutter-project",
+  "destination": "https://flutter.dart-tutorial.dev/getting-started/first-flutter-app/"
+ },
+ {
+  "source": "/fr/introduction-to-flutter/installing-flutter-sdk/",
+  "destination": "https://flutter.dart-tutorial.dev/getting-started/install-flutter/"
+ },
+ {
+  "source": "/fr/introduction-to-flutter/installing-flutter-sdk",
+  "destination": "https://flutter.dart-tutorial.dev/getting-started/install-flutter/"
+ },
+ {
+  "source": "/fr/introduction-to-flutter/running-your-first-flutter-app/",
+  "destination": "https://flutter.dart-tutorial.dev/getting-started/first-flutter-app/"
+ },
+ {
+  "source": "/fr/introduction-to-flutter/running-your-first-flutter-app",
+  "destination": "https://flutter.dart-tutorial.dev/getting-started/first-flutter-app/"
+ },
+ {
+  "source": "/fr/introduction-to-flutter/setting-up-development-environment/",
+  "destination": "https://flutter.dart-tutorial.dev/getting-started/install-flutter/"
+ },
+ {
+  "source": "/fr/introduction-to-flutter/setting-up-development-environment",
+  "destination": "https://flutter.dart-tutorial.dev/getting-started/install-flutter/"
+ },
+ {
+  "source": "/fr/introduction-to-flutter/understanding-flutter-project-structure/",
+  "destination": "https://flutter.dart-tutorial.dev/getting-started/project-structure/"
+ },
+ {
+  "source": "/fr/introduction-to-flutter/understanding-flutter-project-structure",
+  "destination": "https://flutter.dart-tutorial.dev/getting-started/project-structure/"
+ },
+ {
+  "source": "/fr/introduction-to-flutter/what-is-flutter/",
+  "destination": "https://flutter.dart-tutorial.dev/getting-started/what-is-flutter/"
+ },
+ {
+  "source": "/fr/introduction-to-flutter/what-is-flutter",
+  "destination": "https://flutter.dart-tutorial.dev/getting-started/what-is-flutter/"
+ },
+ {
+  "source": "/fr/introduction-to-flutter/why-use-flutter/",
+  "destination": "https://flutter.dart-tutorial.dev/getting-started/what-is-flutter/"
+ },
+ {
+  "source": "/fr/introduction-to-flutter/why-use-flutter",
+  "destination": "https://flutter.dart-tutorial.dev/getting-started/what-is-flutter/"
+ },
+ {
+  "source": "/introduction-to-flutter/",
+  "destination": "https://flutter.dart-tutorial.dev/getting-started/what-is-flutter/"
+ },
+ {
+  "source": "/introduction-to-flutter",
+  "destination": "https://flutter.dart-tutorial.dev/getting-started/what-is-flutter/"
+ },
+ {
+  "source": "/introduction-to-flutter/-hot-reload-vs-hot-restart/",
+  "destination": "https://flutter.dart-tutorial.dev/getting-started/hot-reload/"
+ },
+ {
+  "source": "/introduction-to-flutter/-hot-reload-vs-hot-restart",
+  "destination": "https://flutter.dart-tutorial.dev/getting-started/hot-reload/"
+ },
+ {
+  "source": "/introduction-to-flutter/creating-a-new-flutter-project/",
+  "destination": "https://flutter.dart-tutorial.dev/getting-started/first-flutter-app/"
+ },
+ {
+  "source": "/introduction-to-flutter/creating-a-new-flutter-project",
+  "destination": "https://flutter.dart-tutorial.dev/getting-started/first-flutter-app/"
+ },
+ {
+  "source": "/introduction-to-flutter/installing-flutter-sdk/",
+  "destination": "https://flutter.dart-tutorial.dev/getting-started/install-flutter/"
+ },
+ {
+  "source": "/introduction-to-flutter/installing-flutter-sdk",
+  "destination": "https://flutter.dart-tutorial.dev/getting-started/install-flutter/"
+ },
+ {
+  "source": "/introduction-to-flutter/running-your-first-flutter-app/",
+  "destination": "https://flutter.dart-tutorial.dev/getting-started/first-flutter-app/"
+ },
+ {
+  "source": "/introduction-to-flutter/running-your-first-flutter-app",
+  "destination": "https://flutter.dart-tutorial.dev/getting-started/first-flutter-app/"
+ },
+ {
+  "source": "/introduction-to-flutter/setting-up-development-environment/",
+  "destination": "https://flutter.dart-tutorial.dev/getting-started/install-flutter/"
+ },
+ {
+  "source": "/introduction-to-flutter/setting-up-development-environment",
+  "destination": "https://flutter.dart-tutorial.dev/getting-started/install-flutter/"
+ },
+ {
+  "source": "/introduction-to-flutter/understanding-flutter-project-structure/",
+  "destination": "https://flutter.dart-tutorial.dev/getting-started/project-structure/"
+ },
+ {
+  "source": "/introduction-to-flutter/understanding-flutter-project-structure",
+  "destination": "https://flutter.dart-tutorial.dev/getting-started/project-structure/"
+ },
+ {
+  "source": "/introduction-to-flutter/what-is-flutter/",
+  "destination": "https://flutter.dart-tutorial.dev/getting-started/what-is-flutter/"
+ },
+ {
+  "source": "/introduction-to-flutter/what-is-flutter",
+  "destination": "https://flutter.dart-tutorial.dev/getting-started/what-is-flutter/"
+ },
+ {
+  "source": "/introduction-to-flutter/why-use-flutter/",
+  "destination": "https://flutter.dart-tutorial.dev/getting-started/what-is-flutter/"
+ },
+ {
+  "source": "/introduction-to-flutter/why-use-flutter",
+  "destination": "https://flutter.dart-tutorial.dev/getting-started/what-is-flutter/"
+ },
+ {
+  "source": "/flutter/:path*",
+  "destination": "https://flutter.dart-tutorial.dev/:path*"
+ }
+]

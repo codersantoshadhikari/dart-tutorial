@@ -1,0 +1,29 @@
+{{- /* Language picker. Native page when a translation exists, otherwise the page through Google Translate (nofollow). */ -}}
+{{- $cur := . -}}
+{{- $enLink := .Permalink -}}
+{{- range .AllTranslations }}{{ if eq .Language.Name "en" }}{{ $enLink = .Permalink }}{{ end }}{{ end -}}
+{{- $u := urls.Parse $enLink -}}
+{{- $gtHost := printf "%s.translate.goog" (replace (replace $u.Host "-" "--") "." "-") -}}
+<details class="lang-pick" data-lang-pick>
+  <summary aria-label="Choose your language" title="Choose your language">
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3 12h18M12 3c2.6 2.6 3.9 5.6 3.9 9s-1.3 6.4-3.9 9c-2.6-2.6-3.9-5.6-3.9-9S9.4 5.6 12 3Z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+    <span class="lang-cur">{{ site.Language.Params.flag }}</span>
+  </summary>
+  <div class="lang-menu" role="menu">
+    <p class="lang-h">Learn in your language</p>
+    <ul>
+    {{- range hugo.Sites }}
+      {{- $l := .Language -}}
+      {{- $href := "" -}}{{- $native := false -}}
+      {{- range $cur.AllTranslations }}{{ if eq .Language.Name $l.Name }}{{ $href = .Permalink }}{{ $native = true }}{{ end }}{{ end -}}
+      {{- if and (not $href) (eq $l.Name "en") -}}{{- $href = $enLink -}}{{- $native = true -}}{{- end }}
+      {{- if $native }}
+      <li><a role="menuitem" href="{{ $href }}" hreflang="{{ $l.Locale }}" lang="{{ $l.Locale }}"{{ if eq $l.Name site.Language.Name }} aria-current="true"{{ end }}><span aria-hidden="true">{{ $l.Params.flag }}</span> {{ $l.Label }}</a></li>
+      {{- else }}
+      <li><button type="button" role="menuitem" lang="{{ $l.Locale }}" data-gt="{{ $l.Params.gt }}" data-gt-host="{{ $gtHost }}" data-gt-path="{{ $u.Path }}"><span aria-hidden="true">{{ $l.Params.flag }}</span> {{ $l.Label }}</button></li>
+      {{- end }}
+    {{- end }}
+    </ul>
+    <p class="lang-note">Lessons are written in English. Other languages open a translated copy; the code stays the same.</p>
+  </div>
+</details>

@@ -1,0 +1,15 @@
+{{- $t := site.Params.teacher -}}
+<section class="teacher" aria-labelledby="teacher-h">
+  <div class="teacher-in">
+    <img src="{{ $t.photo | relURL }}" alt="{{ $t.name }}" width="132" height="132" loading="lazy" decoding="async">
+    <div>
+      <h2 id="teacher-h">{{ .h | default (printf "Meet your teacher: %s" $t.name) }}</h2>
+      <p class="role">{{ .role | default $t.role }}</p>
+      <p>{{ .text | default (printf "%s creates free Dart and Flutter tutorials, from your first line of code to apps on Google Play and the App Store. His goal is simple: make learning easy, practical and free for everyone, in every country." $t.name) }}</p>
+      <div class="teacher-links">
+        <a class="btn primary" href="{{ $t.youtube }}" rel="noopener" target="_blank">YouTube: {{ $t.brand }}</a>
+        {{ with (index hugo.Sites 0).GetPage "/about" }}<a class="btn" href="{{ .Permalink }}">About {{ $t.name }}</a>{{ end }}
+      </div>
+    </div>
+  </div>
+</section>

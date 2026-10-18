@@ -1,0 +1,71 @@
+{{ define "bodyclass" }}docs{{ end }}
+{{ define "main" }}
+{{ $content := replace (replace .Content "<input disabled=\"\" type=\"checkbox\">" "<input disabled=\"\" type=\"checkbox\" aria-label=\"Checklist item\">") "<input checked=\"\" disabled=\"\" type=\"checkbox\">" "<input checked=\"\" disabled=\"\" type=\"checkbox\" aria-label=\"Checklist item, done\">" }}
+{{ $track := partial "track.html" . }}
+{{ $trackName := cond (eq $track "flutter") "Flutter" "Dart" }}
+{{ $lessons := partial "lessons.html" $track }}
+{{ $all := partial "lessons.html" "all" }}
+{{ $idx := -1 }}{{ range $i, $p := $lessons }}{{ if eq $p $ }}{{ $idx = $i }}{{ end }}{{ end }}
+{{ $g := -1 }}{{ range $i, $p := $all }}{{ if eq $p $ }}{{ $g = $i }}{{ end }}{{ end }}
+{{ $hasToc := and (ge $idx 0) (gt (len .Fragments.Headings) 0) }}
+<div class="layout{{ if not $hasToc }} no-toc{{ end }}">
+  {{ partial "sidebar.html" . }}
+  <main id="main" class="doc">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="{{ "/" | relURL }}">Home</a><span aria-hidden="true">/</span>{{ if ge $idx 0 }}{{ if eq $track "flutter" }}<a href="{{ "/flutter/" | relURL }}">Flutter</a><span aria-hidden="true">/</span>{{ end }}<a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a><span aria-hidden="true">/</span>{{ end }}<span>{{ .LinkTitle }}</span></nav>
+    <article class="prose">
+      {{ if ge $idx 0 }}<p class="kicker"><span class="badge">{{ $trackName }}</span>{{ with (.Params.level | default .Parent.Params.level) }} <span class="badge level">{{ . }}</span>{{ end }} Lesson {{ add $idx 1 }} of {{ len $lessons }} <span class="read">{{ .ReadingTime }} min read</span></p>{{ end }}
+      <h1>{{ .Title }}</h1>
+      {{ with .Description }}<p class="lede">{{ . }}</p>{{ end }}
+      {{ if $hasToc }}
+      <details class="toc-inline" data-toc-inline>
+        <summary>On this page</summary>
+      </details>
+      {{ end }}
+      {{- if ge $idx 0 -}}
+        {{- /* In-article ad before the middle h2, only when the lesson has 3+ sections, so it never sits at the very top or bottom. */ -}}
+        {{- $parts := split (string $content) "<h2" -}}
+        {{- $n := sub (len $parts) 1 -}}
+        {{- if ge $n 3 -}}
+          {{- $at := add (div $n 2) 1 -}}
+          {{- $out := "" -}}
+          {{- range $i, $p := $parts -}}
+            {{- if eq $i $at -}}{{- $out = printf "%s%s" $out (partial "ad.html" "in-article") -}}{{- end -}}
+            {{- if gt $i 0 -}}{{- $out = printf "%s<h2%s" $out $p -}}{{- else -}}{{- $out = $p -}}{{- end -}}
+          {{- end -}}
+          {{ $out | safeHTML }}
+        {{- else -}}
+          {{ $content | safeHTML }}
+        {{- end -}}
+      {{- else -}}
+        {{ $content | safeHTML }}
+      {{- end }}
+      {{ with .Params.faq }}
+      <div class="faq">
+        {{ range . }}<details><summary>{{ .q }}</summary><p>{{ .a }}</p></details>{{ end }}
+      </div>
+      {{ end }}
+      {{ if not (in (slice "/about/" "/contact/" "/privacy-policy/") .RelPermalink) }}{{ partial "share.html" . }}{{ end }}
+    </article>
+    {{ if or (ge $idx 0) (not (in (slice "/about/" "/contact/" "/privacy-policy/") .RelPermalink)) }}{{ partial "ad.html" "display" }}{{ end }}
+    {{ if ge $idx 0 }}
+    <div class="done-row">
+      <button class="btn done-btn" type="button" data-done="{{ .RelPermalink }}" aria-pressed="false">Mark lesson as done</button>
+      {{ with site.GetPage "/playground" }}<a class="btn" href="{{ .RelPermalink }}{{ if eq $track "flutter" }}#flutter{{ end }}">Practise in the playground</a>{{ end }}
+      <span class="updated">Updated <time datetime="{{ .Lastmod.Format "2006-01-02" }}">{{ .Lastmod.Format "January 2006" }}</time></span>
+    </div>
+    <nav class="pager" aria-label="Lessons">
+      {{ if gt $g 0 }}{{ with index $all (sub $g 1) }}<a class="prev" rel="prev" href="{{ .RelPermalink }}"><small>Previous</small>{{ .LinkTitle }}</a>{{ end }}{{ else }}<span></span>{{ end }}
+      {{ if lt (add $g 1) (len $all) }}{{ with index $all (add $g 1) }}<a class="next" rel="next" href="{{ .RelPermalink }}"><small>Next</small>{{ .LinkTitle }}</a>{{ end }}{{ end }}
+    </nav>
+    <p class="help-strip"><strong>Stuck?</strong> {{ with site.GetPage "/next-steps/common-dart-errors" }}<a href="{{ .RelPermalink }}">Look up your error message</a>, {{ end }}{{ with site.GetPage "/next-steps/dart-glossary" }}<a href="{{ .RelPermalink }}">check a term in the glossary</a>, {{ end }}{{ with site.GetPage "/contact" }}or <a href="{{ .RelPermalink }}">send us your question</a>.{{ end }}</p>
+    {{ partial "ad.html" "multiplex" }}
+    {{ end }}
+  </main>
+  {{ if $hasToc }}
+  <aside class="toc" aria-label="On this page">
+    <p class="toc-h">On this page</p>
+    {{ .TableOfContents }}
+  </aside>
+  {{ end }}
+</div>
+{{ end }}

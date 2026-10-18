@@ -1,0 +1,88 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{{- $author := site.Params.author -}}
+{{- $desc := .Description | default site.Params.description -}}
+{{- $title := "" -}}
+{{- if and .IsHome (ne site.Language.Name "en") -}}
+  {{- $title = .Params.seoTitle | default .Title -}}
+{{- else if .IsHome -}}
+  {{- $title = site.Params.homeTitle | default "Dart Tutorial: Learn Dart and Flutter Step by Step" -}}
+{{- else if .Params.seoTitle -}}
+  {{- $title = .Params.seoTitle -}}
+{{- else if and (eq .Kind "section") (eq .Section "flutter") (not (strings.Contains .Title "Flutter")) -}}
+  {{- $title = printf "Flutter %s | Dart Tutorial" .Title -}}
+{{- else -}}
+  {{- $title = .Title -}}
+  {{- if le (strings.RuneCount .Title) 48 -}}{{- $title = printf "%s | Dart Tutorial" .Title -}}{{- end -}}
+{{- end -}}
+{{- $kw := slice -}}
+{{- if and .IsHome (eq site.Language.Name "en") -}}{{- $kw = site.Params.keywords | default slice -}}{{- else -}}{{- $kw = .Params.keywords | default slice -}}{{- end -}}
+{{- $img := site.Params.ogImage | absURL -}}
+<title>{{ $title }}</title>
+<meta name="description" content="{{ $desc }}">
+{{ with $kw }}<meta name="keywords" content="{{ delimit . ", " }}">{{ end }}
+<meta name="author" content="{{ $author.name }}">
+<link rel="canonical" href="{{ .Permalink }}">
+{{- /* hreflang: every translation of this page, English as x-default. */}}
+{{- if .IsTranslated }}
+{{- range .AllTranslations }}
+<link rel="alternate" hreflang="{{ .Language.Locale }}" href="{{ .Permalink }}">
+{{- if eq .Language.Name "en" }}
+<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">
+{{- end }}
+{{- end }}
+{{- else }}
+<link rel="alternate" hreflang="en" href="{{ .Permalink }}">
+<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">
+{{- end }}
+{{ if eq .Kind "404" }}<meta name="robots" content="noindex">{{ else }}<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">{{ end }}
+{{ with site.Params.verification }}
+{{ with .google }}<meta name="google-site-verification" content="{{ . }}">{{ end }}
+{{ with .bing }}<meta name="msvalidate.01" content="{{ . }}">{{ end }}
+{{ with .yandex }}<meta name="yandex-verification" content="{{ . }}">{{ end }}
+{{ end }}
+<meta name="theme-color" content="#0B5FD9">
+<meta name="application-name" content="Dart Tutorial">
+<meta name="apple-mobile-web-app-title" content="Dart Tutorial">
+<link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
+<link rel="icon" href="{{ "favicon.png" | relURL }}" type="image/png" sizes="96x96">
+<link rel="apple-touch-icon" href="{{ "images/apple-touch-icon.png" | relURL }}">
+<link rel="manifest" href="{{ "site.webmanifest" | relURL }}">
+<link rel="alternate" type="application/rss+xml" title="Dart Tutorial" href="{{ "index.xml" | absURL }}">
+
+<meta property="og:site_name" content="Dart Tutorial">
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $desc }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:image" content="{{ $img }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Dart Tutorial: learn Dart and Flutter">
+<meta property="og:locale" content="{{ site.Language.Params.og | default "en_US" }}">
+{{- range .Translations }}
+<meta property="og:locale:alternate" content="{{ .Language.Params.og }}">
+{{- end }}
+{{ if .IsPage }}
+<meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+<meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">
+<meta property="article:section" content="{{ cond (eq .Section "flutter") "Flutter" "Dart" }}">
+{{ range first 6 $kw }}<meta property="article:tag" content="{{ . }}">{{ end }}
+{{ end }}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ $title }}">
+<meta name="twitter:description" content="{{ $desc }}">
+<meta name="twitter:image" content="{{ $img }}">
+
+<script>
+(function(){try{var t=localStorage.getItem('theme');if(!t){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.dataset.theme=t}catch(e){}})();
+</script>
+<link rel="preload" href="{{ "fonts/figtree-var.woff" | relURL }}" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="{{ "fonts/bricolage-700.woff" | relURL }}" as="font" type="font/woff" crossorigin>
+{{ $css := slice (resources.Get "css/main.css") (resources.Get "css/syntax.css") | resources.Concat "css/site.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+{{ partial "schema.html" . }}
+<meta name="google-adsense-account" content="{{ site.Params.adsense.client }}">
+<link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.Params.adsense.client }}"
+     crossorigin="anonymous"></script>

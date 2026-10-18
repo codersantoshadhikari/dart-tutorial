@@ -1,0 +1,9 @@
+<section class="lang-strip" aria-labelledby="langs-h">
+  <h2 id="langs-h">{{ .h | default "Learn Dart and Flutter in your language" }}</h2>
+  <p>{{ .text | default "Start in your own language. Every lesson can be read translated, and all the code is the same everywhere." }}</p>
+  <ul class="lang-grid">
+    {{- range hugo.Sites }}{{ if ne .Language.Name site.Language.Name }}{{ with .Home }}
+    <li><a href="{{ .Permalink }}" hreflang="{{ .Language.Locale }}" lang="{{ .Language.Locale }}"><span class="flag" aria-hidden="true">{{ .Language.Params.flag }}</span><span><strong>{{ .Language.Label }}</strong><small>{{ .Language.Params.country }}</small></span></a></li>
+    {{- end }}{{ end }}{{ end }}
+  </ul>
+</section>

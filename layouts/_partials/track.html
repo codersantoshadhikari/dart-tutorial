@@ -1,0 +1,4 @@
+{{/* Which course a page belongs to. */}}
+{{ $t := "dart" }}
+{{ if eq .Section "flutter" }}{{ $t = "flutter" }}{{ end }}
+{{ return $t }}

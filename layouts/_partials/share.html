@@ -1,0 +1,10 @@
+{{- /* Share buttons: built in JS on click, so the page carries no outbound links with URL parameters. */ -}}
+<div class="share" role="group" aria-label="Share this page" data-share-url="{{ .Permalink }}" data-share-title="{{ .Params.seoTitle | default .Title }}">
+  <span>Share this page:</span>
+  <button type="button" data-share="native" hidden>Share…</button>
+  <button type="button" data-share="whatsapp">WhatsApp</button>
+  <button type="button" data-share="facebook">Facebook</button>
+  <button type="button" data-share="x">X</button>
+  <button type="button" data-share="linkedin">LinkedIn</button>
+  <button type="button" data-share="copy">Copy link</button>
+</div>

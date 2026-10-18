@@ -1,0 +1,222 @@
+# Dart Tutorial — https://www.dart-tutorial.dev/
+baseURL = 'https://www.dart-tutorial.dev/'
+defaultContentLanguage = 'en'
+defaultContentLanguageInSubdir = false
+title = 'Dart Tutorial'
+enableRobotsTXT = true
+disableKinds = ['taxonomy', 'term']
+timeout = '60s'
+
+[params]
+  tagline = 'Learn Dart and Flutter from beginner to advanced'
+  # <title> of the home page (keep it under about 60 characters).
+  homeTitle = 'Learn Dart Programming Online – Beginner to Advanced Tutorial'
+  description = 'Free Dart tutorial for beginners. Learn Dart programming online from basics to advanced with easy examples, coding practice and an online Dart compiler.'
+  # Main search phrases for the home page (meta keywords + structured data).
+  keywords = ['learn dart online', 'dart tutorial for beginners', 'dart programming course', 'dart basics to advanced', 'free dart tutorial', 'learn dart for flutter', 'dart programming examples', 'dart tutorial in english', 'learn dart', 'dart tutorial', 'dart programming tutorial', 'dart for beginners', 'dart language tutorial', 'dart complete course', 'dart coding practice']
+  # Topic cards on the home page (strong internal links for the main search phrases).
+  popular = [
+    ['Dart and Flutter roadmap', '/learn-dart-and-flutter'],
+    ['Dart online compiler', '/playground'],
+    ['Dart syntax', '/getting-started/dart-syntax'],
+    ['30 Dart programming examples', '/next-steps/dart-programming-examples'],
+    ['Dart list methods', '/collections/list-methods'],
+    ['Dart string methods', '/dart-basics/string-methods'],
+    ['Dart null safety', '/null-safety/null-safety-in-dart'],
+    ['Dart async await', '/async/async-await'],
+    ['Dart classes and objects (OOP)', '/object-oriented-programming/classes-and-objects'],
+    ['Dart interview questions', '/next-steps/dart-interview-questions'],
+    ['Dart vs JavaScript', '/getting-started/dart-vs-javascript'],
+    ['Dart cheat sheet', '/next-steps/dart-cheat-sheet'],
+    ['Dart vs Python', '/getting-started/dart-vs-python'],
+    ['Common Dart errors and fixes', '/next-steps/common-dart-errors'],
+    ['Dart REST API with Shelf', '/practical-dart/web-server-with-shelf'],
+  ]
+  ogImage = 'images/og.png'
+  dartVersion = '3'
+  contactEmail = 'santosh.ad215@gmail.com'
+  # Paste the codes from Google Search Console / Bing Webmaster Tools here (only the content="..." value).
+  [params.verification]
+    google = ''
+    bing = ''
+    yandex = ''
+  # Google AdSense: loader script, account meta tag and ad units are on every page. ads.txt is in static/
+  [params.adsense]
+    client = 'ca-pub-5185925596584445'
+    # Ad units from AdSense > Ads > By ad unit. Empty = that unit is not shown.
+    # Max 3 per lesson, at natural breaks; unfilled units hide themselves.
+    display = '3493648095'    # after the lesson, on chapter pages, on the home page
+    inArticle = '8867982446'  # halfway through longer lessons
+    multiplex = '2933129482'  # bottom of each lesson, after Previous / Next
+  # Your social profiles. Shown as "Follow us" links in the footer (SEO checkers look for these).
+  # Uncomment and put your real profile URLs:
+  # [[params.social]]
+  #   name = 'GitHub'
+  #   url = 'https://github.com/your-name'
+  # [[params.social]]
+  #   name = 'LinkedIn'
+  #   url = 'https://www.linkedin.com/in/your-name/'
+  # [[params.social]]
+  #   name = 'YouTube'
+  #   url = 'https://www.youtube.com/@your-channel'
+  [params.author]
+    name = 'Dart Tutorial'
+    url = 'https://www.dart-tutorial.dev/'
+    # Profiles of the site (GitHub, X, YouTube, LinkedIn page...). Used in structured data.
+    sameAs = ['https://www.youtube.com/channel/UCo6suGrveQ0HFf46wfGBKXA']
+
+[outputs]
+  home = ['html', 'rss', 'json', 'llms']
+  section = ['html']
+  page = ['html']
+
+[sitemap]
+  changefreq = 'weekly'
+  priority = 0.7
+  filename = 'sitemap.xml'
+
+[markup.highlight]
+  noClasses = false
+  guessSyntax = false
+[markup.tableOfContents]
+  startLevel = 2
+  endLevel = 3
+[markup.goldmark.renderer]
+  unsafe = false
+[markup.goldmark.parser.attribute]
+  block = true
+
+[minify]
+  minifyOutput = true
+  [minify.tdewolff.html]
+    keepQuotes = true
+    keepDocumentTags = true
+    keepEndTags = true
+
+[params.teacher]
+  name = 'Santosh Adhikari'
+  role = 'CEO of SMAIT Technology · Software Engineer · Software Architect'
+  brand = 'CoderSantoshAdhikari'
+  photo = 'images/santosh-adhikari.webp'
+  youtube = 'https://www.youtube.com/channel/UCo6suGrveQ0HFf46wfGBKXA'
+
+[[params.social]]
+  name = 'YouTube'
+  url = 'https://www.youtube.com/channel/UCo6suGrveQ0HFf46wfGBKXA'
+
+[languages]
+  [languages.en]
+    weight = 1
+    locale = 'en'
+    label = 'English'
+    [languages.en.params]
+      gt = ''
+      og = 'en_US'
+      flag = '🇺🇸'
+      country = 'USA, UK, Canada, Australia'
+  [languages.hi]
+    weight = 2
+    locale = 'hi'
+    label = 'हिन्दी'
+    [languages.hi.params]
+      gt = 'hi'
+      og = 'hi_IN'
+      flag = '🇮🇳'
+      country = 'India'
+  [languages.pt-br]
+    weight = 3
+    locale = 'pt-BR'
+    label = 'Português (Brasil)'
+    [languages.pt-br.params]
+      gt = 'pt'
+      og = 'pt_BR'
+      flag = '🇧🇷'
+      country = 'Brazil'
+  [languages.id]
+    weight = 4
+    locale = 'id'
+    label = 'Bahasa Indonesia'
+    [languages.id.params]
+      gt = 'id'
+      og = 'id_ID'
+      flag = '🇮🇩'
+      country = 'Indonesia'
+  [languages.vi]
+    weight = 5
+    locale = 'vi'
+    label = 'Tiếng Việt'
+    [languages.vi.params]
+      gt = 'vi'
+      og = 'vi_VN'
+      flag = '🇻🇳'
+      country = 'Vietnam'
+  [languages.de]
+    weight = 6
+    locale = 'de'
+    label = 'Deutsch'
+    [languages.de.params]
+      gt = 'de'
+      og = 'de_DE'
+      flag = '🇩🇪'
+      country = 'Germany'
+  [languages.bn]
+    weight = 7
+    locale = 'bn'
+    label = 'বাংলা'
+    [languages.bn.params]
+      gt = 'bn'
+      og = 'bn_BD'
+      flag = '🇧🇩'
+      country = 'Bangladesh'
+  [languages.ur]
+    weight = 8
+    locale = 'ur'
+    label = 'اردو'
+    direction = 'rtl'
+    [languages.ur.params]
+      gt = 'ur'
+      og = 'ur_PK'
+      flag = '🇵🇰'
+      country = 'Pakistan'
+  [languages.ne]
+    weight = 9
+    locale = 'ne'
+    label = 'नेपाली'
+    [languages.ne.params]
+      gt = 'ne'
+      og = 'ne_NP'
+      flag = '🇳🇵'
+      country = 'Nepal'
+  [languages.fr]
+    weight = 10
+    locale = 'fr'
+    label = 'Français'
+    [languages.fr.params]
+      gt = 'fr'
+      og = 'fr_FR'
+      flag = '🇫🇷'
+      country = 'France'
+  [languages.ja]
+    weight = 11
+    locale = 'ja'
+    label = '日本語'
+    [languages.ja.params]
+      gt = 'ja'
+      og = 'ja_JP'
+      flag = '🇯🇵'
+      country = 'Japan'
+  [languages.fil]
+    weight = 12
+    locale = 'fil'
+    label = 'Filipino'
+    [languages.fil.params]
+      gt = 'tl'
+      og = 'fil_PH'
+      flag = '🇵🇭'
+      country = 'Philippines'
+
+[outputFormats.llms]
+  mediaType = 'text/plain'
+  baseName = 'llms'
+  isPlainText = true
+  notAlternative = true

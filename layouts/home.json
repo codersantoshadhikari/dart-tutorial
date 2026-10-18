@@ -1,0 +1,6 @@
+{{- $out := slice -}}
+{{- range partial "lessons.html" "all" -}}
+  {{- $track := cond (eq .Section "flutter") "Flutter" "Dart" -}}
+  {{- $out = $out | append (dict "t" .Title "s" (printf "%s: %s" $track .Parent.Title) "d" .Description "u" .RelPermalink "k" (delimit (.Params.keywords | default slice) " ") "h" (.TableOfContents | plainify | replaceRE `\s+` " ")) -}}
+{{- end -}}
+{{- $out | jsonify -}}

@@ -1,0 +1,27 @@
+{{ define "bodyclass" }}pg-page{{ end }}
+{{ define "main" }}
+<main id="main" class="pg" data-pg>
+  <div class="pg-head">
+    <div>
+      <h1>{{ .Title }}</h1>
+      <p>Pick an example or write your own code. Press <strong>Run</strong> (or <kbd>Ctrl</kbd> + <kbd>Enter</kbd>, <kbd>⌘</kbd> + <kbd>Enter</kbd> on a Mac) to run your latest changes. Dart programs print to the console; Flutter apps appear in the preview.</p>
+    </div>
+    <div class="pg-controls">
+      <div class="pg-tracks" role="group" aria-label="Language">
+        <button type="button" data-pg-track="dart" aria-pressed="true">Dart</button>
+        <button type="button" data-pg-track="flutter" aria-pressed="false">Flutter</button>
+      </div>
+      <label class="pg-select"><span>Example</span>
+        <select data-pg-samples aria-label="Choose an example"></select>
+      </label>
+      <button class="btn" type="button" data-pg-reset>Reset example</button>
+    </div>
+  </div>
+  <div class="pg-mount" data-pg-mount></div>
+  <script type="application/json" data-pg-samples-json>{{ hugo.Data.playground | jsonify | safeJS }}</script>
+  <div class="pg-guide">{{ partial "ad.html" "display" }}</div>
+  {{ with .Content }}<section class="prose pg-guide">{{ . }}</section>{{ end }}
+  <noscript><p class="pg-nojs">The playground needs JavaScript. You can also use <a href="https://dartpad.dev/">DartPad</a> directly.</p></noscript>
+
+</main>
+{{ end }}
