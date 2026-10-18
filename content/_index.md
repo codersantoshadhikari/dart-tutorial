@@ -2,7 +2,7 @@
 title: "Dart Tutorial"
 description: "Free Dart tutorial for beginners. Learn Dart programming online from basics to advanced with easy examples, coding practice and an online Dart compiler."
 date: 2026-10-10
-lastmod: 2026-10-15
+lastmod: 2026-10-18
 sitemap:
   priority: 1.0
   changefreq: weekly

@@ -52,9 +52,14 @@ for page in sorted(public.rglob("index.html")):
 config = {
     "$schema": "https://openapi.vercel.sh/vercel.json",
     "trailingSlash": True,
+    "framework": "hugo",
+    "buildCommand": "hugo --gc --minify --environment production --baseURL https://www.dart-tutorial.dev/",
+    "outputDirectory": "public",
     "build": {"env": {"HUGO_VERSION": "0.166.0", "HUGO_ENV": "production"}},
     "redirects": redirects,
     "headers": [
+        {"source": "/(css|js|fonts)/(.*)", "headers": [{"key": "Cache-Control", "value": "public, max-age=31536000, immutable"}]},
+        {"source": "/images/(.*)", "headers": [{"key": "Cache-Control", "value": "public, max-age=604800"}]},
         {"source": "/(.*)", "headers": [
             {"key": "X-Content-Type-Options", "value": "nosniff"},
             {"key": "Referrer-Policy", "value": "strict-origin-when-cross-origin"},

@@ -51,6 +51,7 @@
 <link rel="alternate" type="application/rss+xml" title="Dart Tutorial" href="{{ "index.xml" | absURL }}">
 
 <meta property="og:site_name" content="Dart Tutorial">
+<meta property="og:updated_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
 <meta property="og:title" content="{{ $title }}">
 <meta property="og:description" content="{{ $desc }}">
