@@ -163,6 +163,7 @@ Contact: santosh.ad215@gmail.com
 - [Common Dart Errors and How to Fix Them: A Troubleshooting Guide](https://www.dart-tutorial.dev/next-steps/common-dart-errors/): Fix the most common Dart errors fast: null check errors, LateInitializationError, RangeError, FormatException, type errors, Bad state and pub errors.
 - [Dart Glossary: Programming Terms Explained in Simple Words](https://www.dart-tutorial.dev/next-steps/dart-glossary/): A simple A to Z Dart glossary: async, class, closure, const, Future, generics, mixin, null safety, record, Stream, widget and more, each linked to a lesson.
 - [What's New in Dart 3: Modern Features from 3.0 to 3.10](https://www.dart-tutorial.dev/next-steps/whats-new-in-dart-3/): Modern Dart features with examples: records, patterns, sealed classes, extension types, digit separators, wildcards, null-aware elements and dot shorthands.
+- [Dart Best Practices: Write Clean, Safe and Fast Dart Code](https://www.dart-tutorial.dev/next-steps/dart-best-practices/): Dart best practices with before-and-after examples: naming, final and const, null safety, collections, functions, classes, errors, async and tooling.
 
 ## More
 
