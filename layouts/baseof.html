@@ -1,3 +1,4 @@
+{{- if and (not hugo.IsServer) (strings.Contains site.BaseURL "localhost") -}}{{- errorf "Wrong baseURL %q. Do not upload a local build. Build with: hugo --gc --minify (Vercel does this for you)." site.BaseURL -}}{{- end -}}
 <!doctype html>
 <html lang="{{ site.Language.Locale }}">
 <head>

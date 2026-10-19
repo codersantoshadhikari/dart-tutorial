@@ -8,6 +8,7 @@ disableKinds = ['taxonomy', 'term']
 timeout = '60s'
 
 [params]
+  liveHost = 'www.dart-tutorial.dev'
   tagline = 'Learn Dart and Flutter from beginner to advanced'
   # <title> of the home page (keep it under about 60 characters).
   homeTitle = 'Learn Dart Programming Online – Beginner to Advanced Tutorial'

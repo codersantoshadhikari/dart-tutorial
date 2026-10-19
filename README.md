@@ -13,7 +13,7 @@ repository, so it builds with a plain `hugo` command and nothing to download.
 ## Run it
 
 ```bash
-hugo version        # 0.158 or newer (built and tested with 0.166.0)
+hugo version        # 0.158 or newer (built and tested with 0.168.0)
 hugo server         # http://localhost:1313 with live reload
 hugo --gc --minify  # production build into public/
 ```
@@ -21,7 +21,7 @@ hugo --gc --minify  # production build into public/
 The `public/` folder in this repository is a ready-made production build. If your host
 serves `public/` directly, upload it as it is. If your host runs Hugo for you
 (Netlify, Vercel, Cloudflare Pages, GitHub Actions), set the build command to
-`hugo --gc --minify`, the output folder to `public`, and the Hugo version to 0.166.0.
+`hugo --gc --minify`, the output folder to `public`, and the Hugo version to 0.168.0.
 
 ## Folder layout
 

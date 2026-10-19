@@ -2,11 +2,11 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "trailingSlash": true,
   "framework": "hugo",
-  "buildCommand": "hugo --gc --minify --environment production --baseURL https://www.dart-tutorial.dev/",
+  "buildCommand": "hugo --gc --minify --cleanDestinationDir --environment production --baseURL https://www.dart-tutorial.dev/",
   "outputDirectory": "public",
   "build": {
     "env": {
-      "HUGO_VERSION": "0.166.0",
+      "HUGO_VERSION": "0.168.0",
       "HUGO_ENV": "production"
     }
   },
