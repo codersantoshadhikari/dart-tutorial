@@ -1,8 +1,0 @@
-{{/* Chapters of one track. Argument: "dart" or "flutter". */}}
-{{ $out := slice }}
-{{ if eq . "flutter" }}
-  {{ with site.GetPage "/flutter" }}{{ range where .Sections.ByWeight "Params.course" true }}{{ $out = $out | append . }}{{ end }}{{ end }}
-{{ else }}
-  {{ range where site.Sections.ByWeight "Params.course" true }}{{ $out = $out | append . }}{{ end }}
-{{ end }}
-{{ return $out }}
